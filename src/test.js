@@ -1,0 +1,1 @@
+export const testmsg = "Hello, this is a test message.";
