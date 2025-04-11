@@ -1,3 +1,4 @@
+import "./styles.css";
 import { testmsg } from "./test.js";
 
-console.log("Hello, Chick & Beers!");
+console.log(testmsg);
