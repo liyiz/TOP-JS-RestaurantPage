@@ -1,13 +1,13 @@
-/* <h1>Cantine Oh Canada</h1>
-<img src="./img/cantine.jpg"/>
-<p>Your brilliant and reliable local cantine. Come on down for your fill of classic meals like burgers, pizzas, fries and poutine!</p> */
+const renderHome = (container) => {
 
-const renderHomePage = (container) => {
-        const heading = document.createElement( 'h1' );
-        heading.innerText = "Cantine Oh Canada";
-        container.appendChild( heading );
+    const home = document.createElement('div');
+    home.classList.add('page');
+
+    const heading = document.createElement('h1');
+    heading.textContent = "Cantine Oh Canada";
+
+    home.appendChild(heading);
+    container.appendChild(home);
 }
 
-export {
-    renderHomePage
-}
+export { renderHome }

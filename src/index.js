@@ -1,6 +1,8 @@
-import "./styles.css";
-import { testmsg } from "./test.js";
-import { renderHomePage } from "./home.js";
+import './styles.css';
+import { testmsg } from './test.js';
+import { renderHome } from './home.js';
+import { renderMenu } from './menu.js';
+import { renderAbout } from './about.js';
 // import odinImage from "./img/odin.jpg"
 
 // const image = document.createElement("img");
@@ -20,20 +22,23 @@ const clearPage = () => {
 }
 
 const setPage = () => {
-
-    // Clear the previous page before rendering the new page
-    clearPage();
     
     switch (window.location.hash) {
         case '#menu':
-            console.log("render the menu page");
+            renderPage(renderMenu);
             break;
         case '#about':
-            console.log("render the about page");
+            renderPage(renderAbout);
             break;
         default:
-            renderHomePage(container);
+            renderPage(renderHome);
     }
+}
+
+const renderPage = (pageFunction) => {
+    // Clear the previous page before rendering the new page
+    container.innerHTML = '';
+    pageFunction(container);
 }
 
 const attachEvents = () => {
