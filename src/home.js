@@ -1,4 +1,4 @@
-import cantineImage from "./img/cantine.jpg"
+import cantineImage from "./img/pexels-mike-van-schoonderwalt-1884800-5506019-sm.jpg"
 
 const renderHome = (container) => {
 
