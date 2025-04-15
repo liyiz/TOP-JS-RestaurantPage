@@ -17,10 +17,6 @@ const init = () => {
     setPage();
 }
 
-const clearPage = () => {
-    container.innerHTML = '';
-}
-
 const setPage = () => {
     
     switch (window.location.hash) {
