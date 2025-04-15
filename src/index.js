@@ -18,7 +18,10 @@ const init = () => {
 }
 
 const setPage = () => {
-    
+    // switch case to handle state via URL hash
+    // check https://developer.mozilla.org/en-US/docs/Web/API/Location/hash
+    // but essentially a tag is added to the end of the url that can be accessed via browser api
+    // https://developer.mozilla.org/en-US/docs/Web/API/URL/hash
     switch (window.location.hash) {
         case '#menu':
             renderPage(renderMenu);
@@ -53,5 +56,6 @@ const attachEvents = () => {
     })
 }
 
-window.addEventListener('hashchange', setPage);
+// https://developer.mozilla.org/en-US/docs/Web/API/HashChangeEvent
+window.addEventListener('hashchange', setPage); 
 window.addEventListener('DOMContentLoaded', init);
