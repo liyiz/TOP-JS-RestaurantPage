@@ -4,7 +4,7 @@ const renderHome = (container) => {
     home.classList.add('page');
 
     const heading = document.createElement('h1');
-    heading.textContent = "Cantine Oh Canada";
+    heading.textContent = "Cantine O' Canada";
 
     home.appendChild(heading);
     container.appendChild(home);
