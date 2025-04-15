@@ -15,7 +15,15 @@ const init = () => {
     setPage();
 }
 
+const clearPage = () => {
+    container.innerHTML = '';
+}
+
 const setPage = () => {
+
+    // Clear the previous page before rendering the new page
+    clearPage();
+    
     switch (window.location.hash) {
         case '#menu':
             console.log("render the menu page");
