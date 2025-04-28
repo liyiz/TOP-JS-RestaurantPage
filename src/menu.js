@@ -18,12 +18,21 @@ const renderMenu = (container) => {
     const item_listing = document.createElement('div');
     item_listing.classList.add('menu-item-listing');
 
+    const item_blurb = document.createElement('p');
+    item_blurb.classList.add('menu-item-blurb');
+    
     const item_name = document.createElement('p');
     item_name.textContent = 'menu item #01'
+    const item_description = document.createElement('p');
+    item_description.textContent = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+
+    item_blurb.appendChild(item_name);
+    item_blurb.appendChild(item_description);
+
     const item_price = document.createElement('p');
     item_price.textContent = '$4.99'
 
-    item_listing.appendChild(item_name);
+    item_listing.appendChild(item_blurb);
     item_listing.appendChild(item_price);
 
     const item_img = document.createElement('img');
