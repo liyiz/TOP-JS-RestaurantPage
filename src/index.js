@@ -12,7 +12,7 @@ import { renderAbout } from './about.js';
 const container = document.querySelector('#content');
 
 const init = () => {
-    console.log(container);
+    // console.log(container);
     attachEvents();
     setPage();
 }
