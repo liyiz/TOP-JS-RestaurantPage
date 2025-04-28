@@ -26,7 +26,6 @@ const renderHome = (container) => {
     // Hours
     const openingTimes = document.createElement('div');
     const openingTimes_header = document.createElement('h2');
-    const openingTimes_body = document.createElement('div');
     const openingTimes_table = document.createElement("table");
     const openingTimes_tableBody = document.createElement("tbody");
 
@@ -57,14 +56,12 @@ const renderHome = (container) => {
         openingTimes_tableBody.appendChild(row);
     }
 
-    // put the <tbody> in the <table>
     openingTimes_table.appendChild(openingTimes_tableBody);
 
     location.classList.add('home-col');
     openingTimes.classList.add('home-col');
 
     openingTimes.appendChild(openingTimes_header);
-    openingTimes.appendChild(openingTimes_body);
     openingTimes.appendChild(openingTimes_table);
     
     home.appendChild(heading);
