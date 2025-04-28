@@ -52,6 +52,9 @@ const renderHome = (container) => {
     // put the <tbody> in the <table>
     openingTimes_table.appendChild(openingTimes_tableBody);
 
+    location.classList.add('home-col');
+    openingTimes.classList.add('home-col');
+
     openingTimes.appendChild(openingTimes_header);
     openingTimes.appendChild(openingTimes_body);
     openingTimes.appendChild(openingTimes_table);
