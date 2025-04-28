@@ -113,3 +113,18 @@ td {
 .home-col > * {
     flex: 1;
 }
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-item > img {
+    flex: 0 1 auto;
+}
+
+.menu-item-listing {
+    flex: 1 0 auto;
+}
