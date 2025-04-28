@@ -12,8 +12,31 @@ const renderMenu = (container) => {
     img_menu.src = menuImage;
     img_menu.classList.add('hero');
 
+    const item = document.createElement('div');
+    item.classList.add('menu-item');
+
+    const item_listing = document.createElement('div');
+    item_listing.classList.add('menu-item-listing');
+
+    const item_name = document.createElement('p');
+    item_name.textContent = 'menu item #01'
+    const item_price = document.createElement('p');
+    item_price.textContent = '$4.99'
+
+    item_listing.appendChild(item_name);
+    item_listing.appendChild(item_price);
+
+    const item_img = document.createElement('img');
+    item_img.src = 'https://picsum.photos/200';
+
+    item.appendChild(item_listing);
+    item.appendChild(item_img);
+
     menu.appendChild(heading);
     menu.appendChild(img_menu);
+
+    menu.appendChild(item);
+
     container.appendChild(menu);
 
 }
