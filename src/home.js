@@ -32,16 +32,24 @@ const renderHome = (container) => {
 
     openingTimes_header.textContent = 'Opening Times';
 
+    const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const timesOfWeek = ['07:00 - 22:00', '07:00 - 22:00', '07:00 - 22:00', '07:00 - 22:00', '07:00 - 22:00', '08:00 - 15:00', '10:00 - 15:00'];
+
     // creating all cells
     for (let i = 0; i < 7; i++) {
     // creates a table row
         const row = document.createElement("tr");
         for (let j = 0; j < 2; j++) {
-            // Create a <td> element and a text node, make the text
-            // node the contents of the <td>, and put the <td> at
-            // the end of the table row
+
             const cell = document.createElement("td");
-            const cellText = document.createTextNode(`cell in row ${i}, column ${j}`);
+            let cellText;
+
+            if (j % 2 === 0) {
+                cellText = document.createTextNode(`${daysOfWeek[i]}`);
+            } else {
+                cellText = document.createTextNode(`${timesOfWeek[i]}`);
+            }
+
             cell.appendChild(cellText);
             row.appendChild(cell);
         }
