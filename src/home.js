@@ -30,6 +30,8 @@ const renderHome = (container) => {
     const openingTimes_table = document.createElement("table");
     const openingTimes_tableBody = document.createElement("tbody");
 
+    openingTimes_header.textContent = 'Opening Times';
+
     // creating all cells
     for (let i = 0; i < 7; i++) {
     // creates a table row
