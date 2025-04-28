@@ -42,6 +42,10 @@ const renderMenu = (container) => {
 
     container.appendChild(menu);
 
+    // TODO:
+    // 1. Create objects array of menu items - name, description, price, image
+    // 2. Create a function that takes objects array and then populates the menu cards.
+
 }
 
 export { renderMenu }
