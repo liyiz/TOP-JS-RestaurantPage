@@ -1,4 +1,5 @@
 import menuImage from "./img/menu.jpg"
+import { items as menu_items } from "./menu_items";
 
 const renderMenu = (container) => {
     
@@ -12,12 +13,7 @@ const renderMenu = (container) => {
     img_menu.src = menuImage;
     img_menu.classList.add('hero');
 
-    const item = renderMenuItem(
-        'Delicious Chicken Wings', 
-        'A dozen bbq sauce covered chicken wings, grilled over charcoal flames and comes with blue ranch sauce and a garnish of celery sticks.',
-        '$14.99',
-        'https://picsum.photos/200'
-    );
+    const item = renderMenuItem(menu_items[0]);
 
     // Create for loop to iterate through objects array
     // import objects array
@@ -35,7 +31,7 @@ const renderMenu = (container) => {
 
 }
 
-const renderMenuItem = (name, description, price, img_src) => {
+const renderMenuItem = ( { name, description, price, img_src } ) => {
 
     const item = document.createElement('div');
     item.classList.add('menu-item');
