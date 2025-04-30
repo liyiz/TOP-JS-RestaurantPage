@@ -14,6 +14,7 @@ const renderMenu = (container) => {
     img_menu.classList.add('hero');
 
     const item = renderMenuItem(menu_items[0]);
+    const item2 = renderMenuItem(menu_items[1]);
 
     // Create for loop to iterate through objects array
     // import objects array
@@ -22,6 +23,7 @@ const renderMenu = (container) => {
     menu.appendChild(img_menu);
 
     menu.appendChild(item);
+    menu.appendChild(item2);
 
     container.appendChild(menu);
 

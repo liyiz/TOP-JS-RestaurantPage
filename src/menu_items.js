@@ -1,4 +1,5 @@
 import testImage from "./img/menu.jpg"
+import testImage2 from "./img/odin.jpg"
 
 export const items = [
     {
@@ -11,6 +12,6 @@ export const items = [
         'name': 'Korean Style Chicken Wings',
         'description': 'A dozen deep fried chicken wings covered in a spicy Korean inspired garlic and soy flavoured sauce and comes with a small side of kimchi.',
         'price': '$15.99',
-        'img_src': testImage
+        'img_src': testImage2
     },
 ]
