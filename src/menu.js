@@ -53,6 +53,7 @@ const renderMenuItem = ( { name, description, price, img_src } ) => {
     item_blurb.appendChild(item_price);
 
     const item_img = document.createElement('img');
+    // const item_img = new Image(); // viable alternative, but this is more for usage that isn't immediately inserting to DOM - like preloading or caching prior to inserting to DOM.
     item_img.src = img_src;
 
     item.appendChild(item_blurb);
