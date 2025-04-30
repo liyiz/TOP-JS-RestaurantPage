@@ -19,6 +19,9 @@ const renderMenu = (container) => {
         'https://picsum.photos/200'
     );
 
+    // Create for loop to iterate through objects array
+    // import objects array
+
     menu.appendChild(heading);
     menu.appendChild(img_menu);
 
