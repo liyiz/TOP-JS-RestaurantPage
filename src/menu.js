@@ -13,8 +13,6 @@ const renderMenu = (container) => {
     img_menu.src = menuImage;
     img_menu.classList.add('hero');
 
-    const item = renderMenuItem(menu_items[0]);
-    const item2 = renderMenuItem(menu_items[1]);
 
     // Create for loop to iterate through objects array
     // import objects array
@@ -22,15 +20,12 @@ const renderMenu = (container) => {
     menu.appendChild(heading);
     menu.appendChild(img_menu);
 
-    menu.appendChild(item);
-    menu.appendChild(item2);
+    menu_items.forEach((item) => {
+        const to_render = renderMenuItem(item);
+        menu.appendChild(to_render);
+    });
 
     container.appendChild(menu);
-
-    // TODO:
-    // 1. Create objects array of menu items - name, description, price, image
-    // 2. Create a function that takes objects array and then populates the menu cards.
-
 }
 
 const renderMenuItem = ( { name, description, price, img_src } ) => {
