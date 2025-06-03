@@ -4,7 +4,8 @@
   "description": "TOP Project assignment",
   "main": "index.js",
   "scripts": {
-    "serve": "npx webpack serve"
+    "serve": "npx webpack serve",
+    "dist": "npx webpack"
   },
   "repository": {
     "type": "git",
