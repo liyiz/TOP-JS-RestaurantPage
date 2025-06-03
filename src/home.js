@@ -6,7 +6,7 @@ const renderHome = (container) => {
     home.classList.add('page');
 
     const heading = document.createElement('h1');
-    heading.textContent = "Cantine O' Canada";
+    heading.textContent = "Wingers Wings";
 
     const img_cantine = document.createElement('img');
     img_cantine.src = cantineImage;
